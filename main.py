@@ -45,18 +45,6 @@ def test():
 		image = cv2.imread(image_path)
 		answer = predict(image)
 		print(''.join(answer))
-		'''
-		n = 0
-		for j in range(len(answer)):
-			if correct_answers[i][j] == answer[j]:
-				n+=1
-		if(n==len(correct_answers[i])):
-			score += len(correct_answers[i])*multiplication_factor
-
-		else:
-			score += n*2
-		'''
-	print('The final score of the participant is',score)
 
 if __name__ == "__main__":
 	test()
